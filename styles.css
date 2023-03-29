@@ -1,0 +1,181 @@
+:root {
+    --black: #0c0c0c;
+    --white: #FFFF;
+    --grayBlack: #A1A1A1;
+    --vino: #92000A;
+    --gray: #F0F0F0;
+    --r8: 8px
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--gray);
+  }
+
+  header {
+    background-color: var(--white);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    cursor: pointer;
+    color: var(--vino);
+    font-size: 1.5rem;
+  }
+
+
+  header .button-add-book {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--vino);
+    padding: 10px;
+    border-radius: var(--r8);
+  }
+
+  .button-add-book {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--vino);
+    padding: 10px;
+    border-radius: var(--r8);
+  }
+
+  .general--container {
+    display: flex;
+    padding: 1rem 3.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0rem;
+    width: 100%;
+  }
+
+  .cards--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+  .card {
+    border-radius: var(--r8);
+    background-color: #A9DF73;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .title--container {
+    width: 100%;
+    background-color: var(--white);
+    height: 20px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 var(--r8) var(--r8);
+  }
+
+  .modal-container {
+    width: 80%;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--r8);
+    gap: 15px;
+    border: 2px solid var(--vino);
+    position: absolute;
+  }
+
+  .title--modal--container {
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px 20px;
+    background-color: var(--white);
+    display: flex;
+  }
+
+  .title--modal--container p {
+    font-size: 1.5rem;
+  }
+
+  .input--text {
+    padding: 5px;
+    margin: 10px 20px;
+    border-radius: 4px;
+    width: 94%;
+  }
+
+  input:focus .input--text:focus {
+    border-color: var(--vino);
+  }
+
+  .button--modal--container {
+    border-radius:  0px 0px 8px 8px;
+    padding: 10px 20px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cancel--button {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--vino);
+    border-color: var(--vino);
+    padding: 10px;
+    border-radius: var(--r8);
+    margin: 0px 10px;
+  }
+
+  .cancel--button:hover {
+    background-color: var(--vino);
+    color: var(--white);
+  }
+
+  .save--button {
+    cursor: pointer;
+    background-color: var(--vino);
+    color: var(--white);
+    border-color: var(--vino);
+    padding: 10px;
+    border-radius: var(--r8);
+    margin: 0px 10px;
+  }
+
+  .save--button:hover {
+    background-color: var(--white);
+    color: var(--vino);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
